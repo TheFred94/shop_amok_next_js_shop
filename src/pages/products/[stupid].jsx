@@ -16,12 +16,12 @@ export async function getStaticProps(context) {
   const slug = context.params.stupid;
   const api = "https://kea-alt-del.dk/t7/api/products/" + slug;
   const res = await fetch(api);
-  if (res.status != 200) {
+  /* if (res.status != 200) {
     return {
       notFound: true,
     };
   }
-
+ */
   const data = await res.json();
   console.log(data);
 
