@@ -33,7 +33,7 @@ function Product(props) {
     <li>
       <article>
         <p>{props.product.productdisplayname}</p>
-        <Anchor>Read More</Anchor>
+        <Anchor href={`/products/${props.product.id}`}>Read More</Anchor>
       </article>
     </li>
   );
