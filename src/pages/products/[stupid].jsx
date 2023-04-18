@@ -1,11 +1,13 @@
 import Head from "next/head";
-
+import Anchor from "@/components/Anchor";
 export default function Product({ data }) {
   return (
     <>
       <Head>
         <title>{data.productdisplayname}</title>
       </Head>
+      <Anchor href="/">Go back</Anchor>
+      <h1>{data.productdisplayname}</h1>
     </>
   );
 }
